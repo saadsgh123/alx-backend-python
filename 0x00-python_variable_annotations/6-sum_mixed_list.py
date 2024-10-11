@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""function which takes a list of integers and floats and returns their sum as a float."""
+"""function which takes a list of int and floats and returns sum as a float."""
 from typing import Union
 
 
