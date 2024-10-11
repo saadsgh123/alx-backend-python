@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""module of a single function that take key and value and convert them to tuple"""
+"""module of a single function that convert key and value to tuple"""
 import math
 from typing import Union, Tuple
 
