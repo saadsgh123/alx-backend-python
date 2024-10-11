@@ -3,10 +3,10 @@
 module contain a single function which
 return the length of an iterable sequence list
 """
-from typing import Iterable, Tuple, Sequence
+from typing import Iterable, Tuple, Sequence, List
 
 
-def element_length(lst: Iterable[Sequence]) -> Tuple[Sequence, int]:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
     Calculate the  length of an iterable sequence list
     :param lst: iterable list
