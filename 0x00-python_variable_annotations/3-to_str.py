@@ -1,5 +1,5 @@
 #!usr/bin/env python3
-"""Module that contains a single function that convert float to string"""
+"""Module that contains a single function that convert float to string."""
 
 
 def to_str(n: float) -> str:
