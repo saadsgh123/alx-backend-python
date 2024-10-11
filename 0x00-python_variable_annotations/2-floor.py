@@ -3,5 +3,10 @@
 
 
 def floor(n: float) -> int:
-    """Convert float to integer"""
+    """
+    Convert float to int
+
+    :param n: float number
+    :return: the floor of the float.
+    """
     return int(n)
