@@ -1,19 +1,9 @@
+#!/usr/bin/env python3
+
 import asyncio
-from random import random, Random
 
+wait_random = __import__('0-basic_async_syntax').wait_random
 
-async def task1():
-    await asyncio.sleep(2)
-    print("Task 1 finished!")
-
-
-async def task2():
-    print("Task 2 finished!")
-
-
-async def main():
-    await asyncio.gather(task1(), task2())
-
-
-if __name__ == '__main__':
-    print(Random.randrange(start=0, stop=10))
+print(asyncio.run(wait_random()))
+print(asyncio.run(wait_random(5)))
+print(asyncio.run(wait_random(15)))
