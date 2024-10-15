@@ -1,20 +1,20 @@
 import asyncio
 
 
-async def download_file1():
-    print("Downloading file 1...")
-    await asyncio.sleep(1)  # Simulate waiting for download
-    print("Downloaded file 1")
-
-
-async def download_file2():
-    print("Downloading file 2...")
-    await asyncio.sleep(1)  # Simulate waiting for download
-    print("Downloaded file 2")
+# An asynchronous generator that simulates fetching data
+async def async_data_fetcher():
+    for i in range(5):
+        await asyncio.sleep(1)  # Simulate network delay
+        yield f"Data {i + 1}"
 
 
 async def main():
-    await asyncio.gather(download_file2(), download_file1())  # Run both downloads concurrently
+    # Using async comprehension to collect results from the async generator
+    results = [data async for data in async_data_fetcher()]
+
+    print("Fetched results:")
+    for result in results:
+        print(result)
 
 
 if __name__ == '__main__':
